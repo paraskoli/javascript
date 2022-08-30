@@ -275,6 +275,26 @@ window.onload=function(){
   console.log('The document was loaded')
 }
 //events in javasscript
-firstContainer.addEventListener('click',function(){
-  console.log("click hua")
+// firstContainer.addEventListener('click',function(){
+//   document.querySelectorAll(".container")[1].innerHTML = "<b> We have clicked</b>"
+//     console.log("click on container")
+// })
+
+// firstContainer.addEventListener('mouseover',function(){
+//   console.log("mouse pointer on container")
+// })
+
+// firstContainer.addEventListener('mouseover',function(){
+//   console.log("mouse pointer out of container")
+// })
+
+let prevHTML= document.querySelectorAll('.container')[1].innerHTML;
+firstContainer.addEventListener('mouseup',function(){
+  document.querySelectorAll(".container")[1].innerHTML=prevHTML;
+  console.log("mouse pointer up when click on container");
+})
+
+firstContainer.addEventListener('mousedown',function(){
+  document.querySelectorAll('.container')[1].innerHTML="<b> We have clicked</b>"
+  console.log("mouse pointer down when click on container");
 })
