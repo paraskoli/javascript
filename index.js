@@ -288,13 +288,51 @@ window.onload=function(){
 //   console.log("mouse pointer out of container")
 // })
 
-let prevHTML= document.querySelectorAll('.container')[1].innerHTML;
-firstContainer.addEventListener('mouseup',function(){
-  document.querySelectorAll(".container")[1].innerHTML=prevHTML;
-  console.log("mouse pointer up when click on container");
-})
+// let prevHTML= document.querySelectorAll('.container')[1].innerHTML;
+// firstContainer.addEventListener('mouseup',function(){
+//   document.querySelectorAll(".container")[1].innerHTML=prevHTML;
+//   console.log("mouse pointer up when click on container");
+// })
 
-firstContainer.addEventListener('mousedown',function(){
-  document.querySelectorAll('.container')[1].innerHTML="<b> We have clicked</b>"
-  console.log("mouse pointer down when click on container");
-})
+// firstContainer.addEventListener('mousedown',function(){
+//   document.querySelectorAll('.container')[1].innerHTML="<b> We have clicked</b>"
+//   console.log("mouse pointer down when click on container");
+// }) 
+
+// Arrow Functions
+//functions summ(a,b){
+//   return a+b;}
+sum =(a,b)=>{
+  return a+b;
+}
+// setTimeout and setinterval
+
+// logkaro=()=>{
+//   console.log("i am your log")
+// }
+// setTimeout(logkaro,2000);  //2 seconds ke baad run n print hoga console me refresh ke baad
+
+// setInterval(logkaro,2000); // run n print hota rahega every 2 second console me
+
+clr=setTimeout(logkaro,5000); // to cancel the setTimeout
+clr=setInterval(logkaro,2000); // to cancel the setinterval
+
+// javascript localstorage
+// localStorage.setItem('name')
+// localStorage.removeItem("name")
+// localStorage
+// localStorage.getItem("name")
+// localStorage.removeItem("name")
+// localStorage.clear();
+
+//JSON
+obj={name:"harry",length: 1,a:{this:"that"}}
+jso =JSON.stringify(obj);
+console.log(typeof jso)
+console.log(jso)
+parsed=JSON.parse(`{"name":"harry","length":1,"a":{"this":"that"}}`)
+console.log(parsed);
+
+//template literals -Backtics
+a=34;
+console.log(`this is my ${a}`)
